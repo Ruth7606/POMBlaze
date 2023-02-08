@@ -5,8 +5,9 @@
     <classes>
       <class name="testcases.Bookflight">
         <methods>
-          <include name="atTest"/>
+          <include name="setUp"/>
           <include name="afterTest"/>
+          <include name="BookFlight"/>
         </methods>
       </class> <!-- testcases.Bookflight -->
     </classes>

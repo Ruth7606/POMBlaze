@@ -2,20 +2,21 @@ package testcases;
 
 import org.testng.annotations.Test;
 
-import base.LaunchBrowser;
 import pages.HomePage;
 import pages.ReservationPage;
+import utility.Base;
 
-public class Bookflight extends LaunchBrowser {
+public class Bookflight extends Base {
 	
 	
 @Test
-public void atTest() {	
+public void BookFlight() {	
 	HomePage homepage =new HomePage(driver);
 	ReservationPage reservationpage = new ReservationPage(driver);
 	homepage.chooseDepatureCity();
 	homepage.chooseDestinationCity();
 	homepage.clickFindFlightButton();
+	reservationpage.clickOnChooseThisFlightButton();
 	
 }
 }

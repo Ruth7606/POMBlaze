@@ -1,28 +1,33 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
   
 <suite name="BlazeDemoSuite" verbose="5" parallel="tests" thread-count="5">
+	<parameter name="pdfngreport-properties" value="C:\Users\User\eclipse-workspace\BlazeDemoPOM\pdfngreport.properties" />
+
+  <listeners>
+    <listener class-name="com.uttesh.pdfngreport.PDFReportListener" />
+  </listeners>
 
  <test name="BookFlight" enabled= "true">
-  <parameter name = "browser" value = "chrome" />
+  <parameter name = "browser" value = "Chrome" />
     <classes>
       <class name="testcases.Bookflight"/>
     </classes>
   </test> 
   
- <!-- <test name="GoogleTest" enabled= "false">
+  <test name="TC_001Login" enabled= "true">
   <parameter name = "browser" value = "Chrome" />
     <classes>
-       <class name="testNGXMLExample.Google" />
+       <class name="testcases.TC_001Login" />
     </classes>
-  </test>
+  </test>  
  
-  <test name="YahooTest" enabled= "false" >
+  <test name="TC_002Register" enabled= "true" >
    <parameter name = "browser" value = "Firefox" />
     <classes>
-      <class name="testNGXMLExample.Yahoo"/>   
+      <class name="testcases.TC_002Register"/>   
     </classes>
   </test>
-  
+  <!--
    <test name="Wait" enabled= "true" >
    <parameter name = "browser" value = "Firefox" />
     <classes>
