@@ -1,78 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T00:07:45 EAT" name="BlazeDemoSuite" finished-at="2023-02-07T00:08:03 EAT" duration-ms="17899">
+  <suite started-at="2023-02-08T19:17:53 EAT" name="Default suite" finished-at="2023-02-08T19:17:53 EAT" duration-ms="73">
     <groups>
     </groups>
-    <test started-at="2023-02-07T00:07:45 EAT" name="BookFlight" finished-at="2023-02-07T00:07:56 EAT" duration-ms="11410">
-      <class name="testcases.Bookflight">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.Bookflight@548e6d58]" started-at="2023-02-07T00:07:45 EAT" name="setUp" finished-at="2023-02-07T00:07:52 EAT" duration-ms="7311" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-02-08T19:17:53 EAT" name="Default test" finished-at="2023-02-08T19:17:53 EAT" duration-ms="73">
+      <class name="testcases.TC_004Purchase">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_004Purchase@3cc1435c]" started-at="2023-02-08T19:17:53 EAT" name="setUp" finished-at="1970-01-01T03:00:00 EAT" duration-ms="-1675873073498" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setUp but has not been marked @Optional or defined
+in C:\Users\User\AppData\Local\Temp\testng-eclipse--1874475891\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setUp but has not been marked @Optional or defined
+in C:\Users\User\AppData\Local\Temp\testng-eclipse--1874475891\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="BookFlight()[pri:0, instance:testcases.Bookflight@548e6d58]" started-at="2023-02-07T00:07:52 EAT" name="BookFlight" finished-at="2023-02-07T00:07:56 EAT" duration-ms="4026" status="PASS">
+        <test-method signature="BookFlight()[pri:0, instance:testcases.TC_004Purchase@3cc1435c]" started-at="2023-02-08T19:17:53 EAT" name="BookFlight" finished-at="2023-02-08T19:17:53 EAT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setUp but has not been marked @Optional or defined
+in C:\Users\User\AppData\Local\Temp\testng-eclipse--1874475891\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setUp but has not been marked @Optional or defined
+in C:\Users\User\AppData\Local\Temp\testng-eclipse--1874475891\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookFlight -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.Bookflight@548e6d58]" started-at="2023-02-07T00:07:56 EAT" name="afterTest" finished-at="2023-02-07T00:07:56 EAT" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.TC_004Purchase@3cc1435c]" started-at="2023-02-08T19:17:53 EAT" name="afterTest" finished-at="1970-01-01T03:00:00 EAT" duration-ms="-1675873073563" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testcases.Bookflight -->
-    </test> <!-- BookFlight -->
-    <test started-at="2023-02-07T00:07:45 EAT" name="TC_001Login" finished-at="2023-02-07T00:07:59 EAT" duration-ms="14168">
-      <class name="testcases.TC_001Login">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_001Login@68e965f5]" started-at="2023-02-07T00:07:45 EAT" name="setUp" finished-at="2023-02-07T00:07:53 EAT" duration-ms="8593" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_001_Login()[pri:0, instance:testcases.TC_001Login@68e965f5]" started-at="2023-02-07T00:07:53 EAT" name="TC_001_Login" finished-at="2023-02-07T00:07:59 EAT" duration-ms="5559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_001_Login -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.TC_001Login@68e965f5]" started-at="2023-02-07T00:07:59 EAT" name="afterTest" finished-at="2023-02-07T00:07:59 EAT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testcases.TC_001Login -->
-    </test> <!-- TC_001Login -->
-    <test started-at="2023-02-07T00:07:45 EAT" name="TC_002Register" finished-at="2023-02-07T00:08:03 EAT" duration-ms="17899">
-      <class name="testcases.TC_002Register">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testcases.TC_002Register@61d6015a]" started-at="2023-02-07T00:07:45 EAT" name="setUp" finished-at="2023-02-07T00:07:57 EAT" duration-ms="12316" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_002_Register()[pri:0, instance:testcases.TC_002Register@61d6015a]" started-at="2023-02-07T00:07:57 EAT" name="TC_002_Register" finished-at="2023-02-07T00:08:03 EAT" duration-ms="5572" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_002_Register -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.TC_002Register@61d6015a]" started-at="2023-02-07T00:08:03 EAT" name="afterTest" finished-at="2023-02-07T00:08:03 EAT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testcases.TC_002Register -->
-    </test> <!-- TC_002Register -->
-  </suite> <!-- BlazeDemoSuite -->
+      </class> <!-- testcases.TC_004Purchase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

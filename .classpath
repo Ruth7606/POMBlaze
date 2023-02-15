@@ -6,10 +6,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="/SDETBatch007"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -19,6 +19,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/BlazeDemoPOM/jar/jar_files (1)/Saxon-HE-12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/BlazeDemoPOM/lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/eclipse-workspace/BlazeDemoPOM/lib/SaxonLiaison.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

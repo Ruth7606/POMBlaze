@@ -27,14 +27,13 @@
       <class name="testcases.TC_002Register"/>   
     </classes>
   </test>
-  <!--
-   <test name="Wait" enabled= "true" >
-   <parameter name = "browser" value = "Firefox" />
+  
+   <test name="TC_003Reservation" enabled= "true" >
+   <parameter name = "browser" value = "Chrome" />
     <classes>
-      <class name="testNGXMLExample.WebDriverWaitDemo"/>   
+      <class name="testcases.TC_003Reservation"/>   
     </classes>
   </test>
   
   
-  -->
 </suite>

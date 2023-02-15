@@ -17,10 +17,10 @@ public class ReservationPage extends Base{
 	public void clickOnChooseThisFlightButton() {
 		driver.findElement(chooseThisFlightButton).click();
 		}
-	By getFlightNumber =By.xpath("//td[normalize-space()='43']");
-	public String flightNumber() {
-		String flightID = driver.findElement(getFlightNumber).getText();
-		return flightID;
-				
-		}
+//	By getFlightNumber =By.xpath("//td[normalize-space()='43']");
+//	public String flightNumber() {
+//		String flightID = driver.findElement(getFlightNumber).getText();
+//		return flightID;
+//				
+//		}
 }
